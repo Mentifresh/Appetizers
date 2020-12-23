@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3364C9432591013C0060E17D /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364C9422591013C0060E17D /* AppetizerListViewModel.swift */; };
 		3364C9462591056B0060E17D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364C9452591056B0060E17D /* Alert.swift */; };
+		3364C949259373220060E17D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364C948259373220060E17D /* LoadingView.swift */; };
+		3364C94C259374170060E17D /* Color+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364C94B259374170060E17D /* Color+ext.swift */; };
 		339285F0257ABA7200ACAA02 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339285EF257ABA7200ACAA02 /* AppetizersApp.swift */; };
 		339285F2257ABA7200ACAA02 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339285F1257ABA7200ACAA02 /* AppetizerTabView.swift */; };
 		339285F4257ABA7500ACAA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339285F3257ABA7500ACAA02 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		3364C9422591013C0060E17D /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		3364C9452591056B0060E17D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		3364C948259373220060E17D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		3364C94B259374170060E17D /* Color+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ext.swift"; sourceTree = "<group>"; };
 		339285EC257ABA7200ACAA02 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		339285EF257ABA7200ACAA02 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		339285F1257ABA7200ACAA02 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -51,6 +55,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3364C94E259374360060E17D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3364C94B259374170060E17D /* Color+ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3364C951259376A20060E17D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3364C94E259374360060E17D /* Extensions */,
+				3392867A2586790400ACAA02 /* APError.swift */,
+				3364C9452591056B0060E17D /* Alert.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		339285E3257ABA7200ACAA02 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +92,7 @@
 		339285EE257ABA7200ACAA02 /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				3364C951259376A20060E17D /* Utils */,
 				339286742586779B00ACAA02 /* Networking */,
 				3392862C25803F4E00ACAA02 /* Models */,
 				33928600257ABAAF00ACAA02 /* Screens */,
@@ -77,8 +100,7 @@
 				339285F3257ABA7500ACAA02 /* Assets.xcassets */,
 				339285F8257ABA7500ACAA02 /* Info.plist */,
 				339285F5257ABA7500ACAA02 /* Preview Content */,
-				3392867A2586790400ACAA02 /* APError.swift */,
-				3364C9452591056B0060E17D /* Alert.swift */,
+				3364C948259373220060E17D /* LoadingView.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -218,6 +240,8 @@
 				339286312580483F00ACAA02 /* AppetizerListCell.swift in Sources */,
 				3364C9432591013C0060E17D /* AppetizerListViewModel.swift in Sources */,
 				33928607257ABB5000ACAA02 /* AccountView.swift in Sources */,
+				3364C949259373220060E17D /* LoadingView.swift in Sources */,
+				3364C94C259374170060E17D /* Color+ext.swift in Sources */,
 				339285F2257ABA7200ACAA02 /* AppetizerTabView.swift in Sources */,
 				33928676258677C500ACAA02 /* NetworkManager.swift in Sources */,
 				339285F0257ABA7200ACAA02 /* AppetizersApp.swift in Sources */,
