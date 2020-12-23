@@ -62,9 +62,6 @@ final class NetworkManager {
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard
-                let _ = error,
-                let response = response as? HTTPURLResponse,
-                response.statusCode == 200,
                 let data = data,
                 let image = UIImage(data: data)
             else {
